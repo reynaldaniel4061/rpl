@@ -18,21 +18,14 @@ public class Jurnal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int b =1;
         Scanner rey = new Scanner(System.in);
         System.out.print("Masukkan jumlah angka : ");
         int in = rey.nextInt();
         
-        int fib[] = new int[in];
-        
-        fib[0] = 0;
-        fib[1] = 1;
-        
-        for (int i = 2; i < in; i++) {
-            fib[i] = fib[i-1] + fib[i-2];
-        }
-        for (int i = 0; i < in; i++) {
-            System.out.print(fib[i] + " ");
-        }
+        b = in - b;
+        in =  in + b;
+        System.out.println(in+" ");
     }
     
 }
